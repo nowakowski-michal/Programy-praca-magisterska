@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EFMongo_app.Benchmarks.CreateBenchmark-20250123-133247</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.5371/22H2/2022Update)
+Intel Core i5-10400F CPU 2.90GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 9.0.102
+  [Host]     : .NET 8.0.12 (8.0.1224.60305), X64 RyuJIT AVX2
+  Job-BXGVZO : .NET 8.0.12 (8.0.1224.60305), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>InvocationCount=1  IterationCount=10  UnrollFactor=1  
+WarmupCount=3  
+</code></pre>
+
+<table>
+<thead><tr><th>Method               </th><th>Count</th><th>Mean  </th><th>Error </th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>GenerateAllData</td><td>100</td><td>234.11 ms</td><td>102.411 ms</td><td>67.738 ms</td>
+</tr><tr><td>GeneratePilotWithInsurance</td><td>100</td><td>121.58 ms</td><td>12.755 ms</td><td>7.590 ms</td>
+</tr><tr><td>GeneratePilot</td><td>100</td><td>10.94 ms</td><td>1.764 ms</td><td>1.050 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>100</td><td>88.24 ms</td><td>7.623 ms</td><td>5.042 ms</td>
+</tr><tr><td>GenerateAllData</td><td>1000</td><td>1,725.13 ms</td><td>9.094 ms</td><td>6.015 ms</td>
+</tr><tr><td>GeneratePilotWithInsurance</td><td>1000</td><td>567.38 ms</td><td>4.827 ms</td><td>2.525 ms</td>
+</tr><tr><td>GeneratePilot</td><td>1000</td><td>92.17 ms</td><td>2.984 ms</td><td>1.561 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>1000</td><td>392.51 ms</td><td>5.905 ms</td><td>3.514 ms</td>
+</tr><tr><td>GenerateAllData</td><td>5000</td><td>13,145.30 ms</td><td>64.008 ms</td><td>38.090 ms</td>
+</tr><tr><td>GeneratePilotWithInsurance</td><td>5000</td><td>2,839.55 ms</td><td>14.146 ms</td><td>9.357 ms</td>
+</tr><tr><td>GeneratePilot</td><td>5000</td><td>217.99 ms</td><td>4.310 ms</td><td>2.254 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>5000</td><td>2,140.06 ms</td><td>13.865 ms</td><td>9.171 ms</td>
+</tr><tr><td>GenerateAllData</td><td>10000</td><td>42,761.93 ms</td><td>1,299.081 ms</td><td>859.262 ms</td>
+</tr><tr><td>GeneratePilotWithInsurance</td><td>10000</td><td>5,698.90 ms</td><td>22.724 ms</td><td>15.031 ms</td>
+</tr><tr><td>GeneratePilot</td><td>10000</td><td>437.65 ms</td><td>7.936 ms</td><td>5.249 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>10000</td><td>4,841.48 ms</td><td>13.318 ms</td><td>6.966 ms</td>
+</tr></tbody></table>
+</body>
+</html>

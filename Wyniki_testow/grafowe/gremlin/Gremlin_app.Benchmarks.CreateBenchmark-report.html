@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Gremlin_app.Benchmarks.CreateBenchmark-20250124-094449</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.5371/22H2/2022Update)
+Intel Core i7-6700 CPU 3.40GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
+.NET SDK 8.0.303
+  [Host]     : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+  Job-XNENWL : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>InvocationCount=1  IterationCount=10  UnrollFactor=1  
+WarmupCount=3  
+</code></pre>
+
+<table>
+<thead><tr><th>Method               </th><th>Count</th><th>Mean  </th><th>Error  </th><th>StdDev </th><th>Median</th>
+</tr>
+</thead><tbody><tr><td>GenerateAllData</td><td>100</td><td>35,000.7 ms</td><td>10,356.52 ms</td><td>6,850.20 ms</td><td>31,963.1 ms</td>
+</tr><tr><td>GeneratePilotsWithInsurance</td><td>100</td><td>1,474.8 ms</td><td>93.62 ms</td><td>61.92 ms</td><td>1,478.3 ms</td>
+</tr><tr><td>GeneratePilots</td><td>100</td><td>186.4 ms</td><td>19.90 ms</td><td>13.17 ms</td><td>183.8 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>100</td><td>17,689.2 ms</td><td>1,504.18 ms</td><td>786.71 ms</td><td>17,780.7 ms</td>
+</tr><tr><td>GenerateAllData</td><td>500</td><td>496,529.3 ms</td><td>257,531.50 ms</td><td>170,341.14 ms</td><td>394,579.4 ms</td>
+</tr><tr><td>GeneratePilotsWithInsurance</td><td>500</td><td>29,687.7 ms</td><td>1,034.70 ms</td><td>684.39 ms</td><td>29,586.4 ms</td>
+</tr><tr><td>GeneratePilots</td><td>500</td><td>669.7 ms</td><td>34.90 ms</td><td>20.77 ms</td><td>672.3 ms</td>
+</tr><tr><td>GenerateDronesWithRelations</td><td>500</td><td>331,324.7 ms</td><td>125,480.52 ms</td><td>82,997.59 ms</td><td>289,725.3 ms</td>
+</tr></tbody></table>
+</body>
+</html>
