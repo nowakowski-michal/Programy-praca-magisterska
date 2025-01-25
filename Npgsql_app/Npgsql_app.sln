@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Npgsql_app", "Npgsql_app\Npgsql_app.csproj", "{DF913E13-49AE-416F-8315-85B7109D911D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF913E13-49AE-416F-8315-85B7109D911D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF913E13-49AE-416F-8315-85B7109D911D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF913E13-49AE-416F-8315-85B7109D911D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF913E13-49AE-416F-8315-85B7109D911D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {463CE870-F21C-4FDB-87C7-C72631399EC4}
+	EndGlobalSection
+EndGlobal
