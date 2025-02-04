@@ -1,0 +1,267 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\obj\Release\net8.0/" /p:OutDir="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0/" /p:OutputPath="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0/" in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb
+// command took 1.37 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\obj\Release\net8.0/" /p:OutDir="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0/" /p:OutputPath="C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0/" --output "C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0/" in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb
+// command took 5.28 sec and exited with 0
+// ***** Done, took 00:00:06 (6.74 sec)   *****
+// Found 4 benchmarks:
+//   Read_Load.TestRead_Relacje1N: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+//   Read_Load.TestRead_Relacja1_1: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+//   Read_Load.TestRead_BezRelacji: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+//   Read_Load.TestRead_RelacjaNM: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// **************************
+// Benchmark: Read_Load.TestRead_Relacje1N: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 134ceb57-8ebb-4744-91d3-c12ba44428eb.dll --anonymousPipes 1632 1640 --benchmarkName Redis_app.TestLoad.Read_Load.TestRead_Relacje1N --job "InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2" --benchmarkId 0 in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-CCQUSI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 9348204100.00 ns, 9.3482 s/op
+WorkloadWarmup   2: 1 op, 9111962700.00 ns, 9.1120 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 9246807600.00 ns, 9.2468 s/op
+WorkloadActual   2: 1 op, 9003068500.00 ns, 9.0031 s/op
+WorkloadActual   3: 1 op, 9062801500.00 ns, 9.0628 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 9246807600.00 ns, 9.2468 s/op
+WorkloadResult   2: 1 op, 9003068500.00 ns, 9.0031 s/op
+WorkloadResult   3: 1 op, 9062801500.00 ns, 9.0628 s/op
+// GC:  13 5 2 63076464 1
+// Threading:  91039 81 1
+
+// AfterAll
+// Benchmark Process 15840 has exited with code 0.
+
+Mean = 9.104 s, StdErr = 0.073 s (0.81%), N = 3, StdDev = 0.127 s
+Min = 9.003 s, Q1 = 9.033 s, Median = 9.063 s, Q3 = 9.155 s, Max = 9.247 s
+IQR = 0.122 s, LowerFence = 8.850 s, UpperFence = 9.338 s
+ConfidenceInterval = [6.787 s; 11.422 s] (CI 99.9%), Margin = 2.318 s (25.46% of Mean)
+Skewness = 0.29, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 3 (75,0%) benchmark(s) to run. Estimated finish 2025-01-23 16:51 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// **************************
+// Benchmark: Read_Load.TestRead_Relacja1_1: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 134ceb57-8ebb-4744-91d3-c12ba44428eb.dll --anonymousPipes 1508 1500 --benchmarkName Redis_app.TestLoad.Read_Load.TestRead_Relacja1_1 --job "InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2" --benchmarkId 1 in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-BMGPXO(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 6274032900.00 ns, 6.2740 s/op
+WorkloadWarmup   2: 1 op, 6087582500.00 ns, 6.0876 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6156239100.00 ns, 6.1562 s/op
+WorkloadActual   2: 1 op, 6076120000.00 ns, 6.0761 s/op
+WorkloadActual   3: 1 op, 6190599100.00 ns, 6.1906 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6156239100.00 ns, 6.1562 s/op
+WorkloadResult   2: 1 op, 6076120000.00 ns, 6.0761 s/op
+WorkloadResult   3: 1 op, 6190599100.00 ns, 6.1906 s/op
+// GC:  5 2 1 29136472 1
+// Threading:  60906 22 1
+
+// AfterAll
+// Benchmark Process 2996 has exited with code 0.
+
+Mean = 6.141 s, StdErr = 0.034 s (0.55%), N = 3, StdDev = 0.059 s
+Min = 6.076 s, Q1 = 6.116 s, Median = 6.156 s, Q3 = 6.173 s, Max = 6.191 s
+IQR = 0.057 s, LowerFence = 6.030 s, UpperFence = 6.259 s
+ConfidenceInterval = [5.069 s; 7.213 s] (CI 99.9%), Margin = 1.072 s (17.45% of Mean)
+Skewness = -0.24, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 2 (50,0%) benchmark(s) to run. Estimated finish 2025-01-23 16:50 (0h 1m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// **************************
+// Benchmark: Read_Load.TestRead_BezRelacji: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 134ceb57-8ebb-4744-91d3-c12ba44428eb.dll --anonymousPipes 1552 636 --benchmarkName Redis_app.TestLoad.Read_Load.TestRead_BezRelacji --job "InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2" --benchmarkId 2 in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-GHOTOH(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 3329282500.00 ns, 3.3293 s/op
+WorkloadWarmup   2: 1 op, 3216796700.00 ns, 3.2168 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3093526900.00 ns, 3.0935 s/op
+WorkloadActual   2: 1 op, 3013472600.00 ns, 3.0135 s/op
+WorkloadActual   3: 1 op, 3113511700.00 ns, 3.1135 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3093526900.00 ns, 3.0935 s/op
+WorkloadResult   2: 1 op, 3013472600.00 ns, 3.0135 s/op
+WorkloadResult   3: 1 op, 3113511700.00 ns, 3.1135 s/op
+// GC:  2 1 0 14835640 1
+// Threading:  30903 17 1
+
+// AfterAll
+// Benchmark Process 16372 has exited with code 0.
+
+Mean = 3.074 s, StdErr = 0.031 s (0.99%), N = 3, StdDev = 0.053 s
+Min = 3.013 s, Q1 = 3.053 s, Median = 3.094 s, Q3 = 3.104 s, Max = 3.114 s
+IQR = 0.050 s, LowerFence = 2.978 s, UpperFence = 3.179 s
+ConfidenceInterval = [2.108 s; 4.039 s] (CI 99.9%), Margin = 0.966 s (31.42% of Mean)
+Skewness = -0.32, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 1 (25,0%) benchmark(s) to run. Estimated finish 2025-01-23 16:49 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// **************************
+// Benchmark: Read_Load.TestRead_RelacjaNM: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 134ceb57-8ebb-4744-91d3-c12ba44428eb.dll --anonymousPipes 1440 1492 --benchmarkName Redis_app.TestLoad.Read_Load.TestRead_RelacjaNM --job "InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2" --benchmarkId 3 in C:\Users\minx\Desktop\kody_wstepnie_skonczone\Redis_app\Redis_app\bin\Release\net8.0\134ceb57-8ebb-4744-91d3-c12ba44428eb\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-FPKUZR(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 14242742100.00 ns, 14.2427 s/op
+WorkloadWarmup   2: 1 op, 14181530800.00 ns, 14.1815 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 14110866400.00 ns, 14.1109 s/op
+WorkloadActual   2: 1 op, 14060986300.00 ns, 14.0610 s/op
+WorkloadActual   3: 1 op, 14043634200.00 ns, 14.0436 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 14110866400.00 ns, 14.1109 s/op
+WorkloadResult   2: 1 op, 14060986300.00 ns, 14.0610 s/op
+WorkloadResult   3: 1 op, 14043634200.00 ns, 14.0436 s/op
+// GC:  9 1 0 38036320 1
+// Threading:  139139 76 1
+
+// AfterAll
+// Benchmark Process 2324 has exited with code 0.
+
+Mean = 14.072 s, StdErr = 0.020 s (0.14%), N = 3, StdDev = 0.035 s
+Min = 14.044 s, Q1 = 14.052 s, Median = 14.061 s, Q3 = 14.086 s, Max = 14.111 s
+IQR = 0.034 s, LowerFence = 14.002 s, UpperFence = 14.136 s
+ConfidenceInterval = [13.435 s; 14.709 s] (CI 99.9%), Margin = 0.637 s (4.53% of Mean)
+Skewness = 0.28, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 0 (0,0%) benchmark(s) to run. Estimated finish 2025-01-23 16:50 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Redis_app.TestLoad.Read_Load-report.csv
+  BenchmarkDotNet.Artifacts\results\Redis_app.TestLoad.Read_Load-report-github.md
+  BenchmarkDotNet.Artifacts\results\Redis_app.TestLoad.Read_Load-report.html
+
+// * Detailed results *
+Read_Load.TestRead_Relacje1N: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+Runtime = .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 9.104 s, StdErr = 0.073 s (0.81%), N = 3, StdDev = 0.127 s
+Min = 9.003 s, Q1 = 9.033 s, Median = 9.063 s, Q3 = 9.155 s, Max = 9.247 s
+IQR = 0.122 s, LowerFence = 8.850 s, UpperFence = 9.338 s
+ConfidenceInterval = [6.787 s; 11.422 s] (CI 99.9%), Margin = 2.318 s (25.46% of Mean)
+Skewness = 0.29, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[8.917 s ; 9.149 s) | @@
+[9.149 s ; 9.362 s) | @
+---------------------------------------------------
+
+Read_Load.TestRead_Relacja1_1: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+Runtime = .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 6.141 s, StdErr = 0.034 s (0.55%), N = 3, StdDev = 0.059 s
+Min = 6.076 s, Q1 = 6.116 s, Median = 6.156 s, Q3 = 6.173 s, Max = 6.191 s
+IQR = 0.057 s, LowerFence = 6.030 s, UpperFence = 6.259 s
+ConfidenceInterval = [5.069 s; 7.213 s] (CI 99.9%), Margin = 1.072 s (17.45% of Mean)
+Skewness = -0.24, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[6.023 s ; 6.244 s) | @@@
+---------------------------------------------------
+
+Read_Load.TestRead_BezRelacji: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+Runtime = .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 3.074 s, StdErr = 0.031 s (0.99%), N = 3, StdDev = 0.053 s
+Min = 3.013 s, Q1 = 3.053 s, Median = 3.094 s, Q3 = 3.104 s, Max = 3.114 s
+IQR = 0.050 s, LowerFence = 2.978 s, UpperFence = 3.179 s
+ConfidenceInterval = [2.108 s; 4.039 s] (CI 99.9%), Margin = 0.966 s (31.42% of Mean)
+Skewness = -0.32, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[2.965 s ; 3.055 s) | @
+[3.055 s ; 3.162 s) | @@
+---------------------------------------------------
+
+Read_Load.TestRead_RelacjaNM: Job-PZSVXI(InvocationCount=1, IterationCount=3, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+Runtime = .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 14.072 s, StdErr = 0.020 s (0.14%), N = 3, StdDev = 0.035 s
+Min = 14.044 s, Q1 = 14.052 s, Median = 14.061 s, Q3 = 14.086 s, Max = 14.111 s
+IQR = 0.034 s, LowerFence = 14.002 s, UpperFence = 14.136 s
+ConfidenceInterval = [13.435 s; 14.709 s] (CI 99.9%), Margin = 0.637 s (4.53% of Mean)
+Skewness = 0.28, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[14.012 s ; 14.143 s) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.5371/22H2/2022Update)
+Intel Core i7-6700 CPU 3.40GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
+.NET SDK 8.0.303
+  [Host]     : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+  Job-PZSVXI : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+
+InvocationCount=1  IterationCount=3  RunStrategy=Monitoring  
+UnrollFactor=1  WarmupCount=2  
+
+| Method              | Mean     | Error    | StdDev   | Gen0       | Gen1      | Gen2      | Allocated |
+|-------------------- |---------:|---------:|---------:|-----------:|----------:|----------:|----------:|
+| TestRead_Relacje1N  |  9.104 s | 2.3177 s | 0.1270 s | 13000.0000 | 5000.0000 | 2000.0000 |  60.15 MB |
+| TestRead_Relacja1_1 |  6.141 s | 1.0717 s | 0.0587 s |  5000.0000 | 2000.0000 | 1000.0000 |  27.79 MB |
+| TestRead_BezRelacji |  3.074 s | 0.9658 s | 0.0529 s |  2000.0000 | 1000.0000 |         - |  14.15 MB |
+| TestRead_RelacjaNM  | 14.072 s | 0.6368 s | 0.0349 s |  9000.0000 | 1000.0000 |         - |  36.27 MB |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen0      : GC Generation 0 collects per 1000 operations
+  Gen1      : GC Generation 1 collects per 1000 operations
+  Gen2      : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 s       : 1 Second (1 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:03:17 (197.13 sec), executed benchmarks: 4
+
+Global total time: 00:03:24 (204.19 sec), executed benchmarks: 4
+// * Artifacts cleanup *
+Artifacts cleanup is finished
